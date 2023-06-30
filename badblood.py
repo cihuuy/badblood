@@ -270,11 +270,11 @@ if __name__ == '__main__':
         sys.exit(1)
 
     if args.rversion not in version_dict:
-        printf("[-] User specified an unsupported SMA-100 version. Exiting.")
+        print("[-] User specified an unsupported SMA-100 version. Exiting.")
         sys.exit(1)
     
     if len(args.lhost) > 15:
-        printf('[-] lhost must be less than 16 bytes. Alignment issues, sorry!')
+        print('[-] lhost must be less than 16 bytes. Alignment issues, sorry!')
         sys.exit(1)
 
     # Spin up a server for the exploit to call back to
